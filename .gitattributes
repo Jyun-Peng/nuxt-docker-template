@@ -1,0 +1,6 @@
+* text=auto eol=lf
+
+*.js text eol=lf
+*.vue text eol=lf
+
+Dockerfile eol=lf
