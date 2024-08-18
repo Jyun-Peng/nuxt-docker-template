@@ -2,13 +2,14 @@ FROM node:20.16-bookworm-slim
 
 RUN corepack enable
 
-WORKDIR /
-
-COPY src src
-
 WORKDIR /src
 
+COPY src/package.json src/yarn.lock ./
+
 RUN yarn install
+
+COPY src .
+
 RUN yarn run build
 
 ENV PORT=3000
