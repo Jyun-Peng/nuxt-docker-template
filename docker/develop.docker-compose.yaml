@@ -4,7 +4,7 @@ services:
   web:
     build:
       context: '../'
-      dockerfile: 'docker/local.Dockerfile'
+      dockerfile: 'docker/develop.Dockerfile'
     ports:
       - 3000:3000
     # volumes:
